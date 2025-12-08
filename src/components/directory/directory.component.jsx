@@ -35,13 +35,13 @@ const categories = [
     }
   ];
 
-const Directory = ({categories}) => {
+const Directory = () => {
     return (
-        <div className="directory-container">
+        <DirectoryContainer>
             {categories.map((category) => (
                 <DirectoryItem key={category.id} category={category} />
             ))}
-        </div>
+        </DirectoryContainer>
     );
 };
 
