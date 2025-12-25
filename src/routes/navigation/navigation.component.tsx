@@ -4,6 +4,7 @@ import { useSelector, useDispatch } from 'react-redux';
 
 import CartIcon from '../../components/cart-icon/cart-icon.component';
 import CartDropdown from '../../components/cart-dropdown/cart-dropdown.component';
+import SearchBar from '../../components/search-bar/search-bar.component';
 
 import { selectIsCartOpen } from '../../store/cart/cart.selector';
 import { selectCurrentUser } from '../../store/user/user.selector';
@@ -32,6 +33,7 @@ const Navigation = () => {
         <LogoContainer to='/'>
           <CrownLogo className='logo' />
         </LogoContainer>
+        <SearchBar />
         <NavLinks>
           <NavLink to='/shop'>SHOP</NavLink>
 

@@ -1,4 +1,19 @@
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
+
+export const ProductImageLink = styled(Link)`
+  width: 100%;
+  height: 95%;
+  display: block;
+  cursor: pointer;
+  
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin-bottom: 5px;
+  }
+`;
 
 export const ProductCartContainer = styled.div`
   width: 100%;
@@ -7,13 +22,6 @@ export const ProductCartContainer = styled.div`
   height: 350px;
   align-items: center;
   position: relative;
-
-  img {
-    width: 100%;
-    height: 95%;
-    object-fit: cover;
-    margin-bottom: 5px;
-  }
 
   button {
     width: 80%;
@@ -24,7 +32,7 @@ export const ProductCartContainer = styled.div`
   }
 
   &:hover {
-    img {
+    ${ProductImageLink} img {
       opacity: 0.8;
     }
 
